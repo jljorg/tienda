@@ -1,7 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Producto = ({producto}) => {
-    
+    const navigate=useNavigate();
 
     const {id,estado,nombre,categoria}=producto
 
@@ -18,9 +19,10 @@ const Producto = ({producto}) => {
      w-full p-2 text-white uppercase font-bold text-xs mt-3 rounded-md">Eliminar</button>
      <button className="bg-green-500   hover:bg-green-600 block
      w-full p-2 text-white uppercase font-bold text-xs mt-3 rounded-md"
-     >ver</button></td>
+     onClick={()=>navigate(`/api/productos/${id}`)} >ver</button></td>
   </tr>
   )
 }
 
 export default Producto
+

@@ -7,6 +7,7 @@ import ListaDatos from './components/ListaDatos';
 import Layout from './layout/Layout';
 import Inicio from './pages/Inicio';
 import NuevoProducto from './pages/NuevoProducto';
+import VerProducto from './pages/VerProducto';
 function App() {
   const [categorias, setCategorias] = useState([]);
   //console.log(categorias)
@@ -72,6 +73,7 @@ function App() {
 
     <Route index  element={<Inicio></Inicio>} />
     <Route path="nuevo" element={<NuevoProducto/>} />
+    <Route path=":id" element={<VerProducto></VerProducto>}/>
 
     </Route>
     </Routes>

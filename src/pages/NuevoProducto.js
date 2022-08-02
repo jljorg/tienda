@@ -34,8 +34,8 @@ const NuevoProducto = () => {
   }, [])
   return (
     <>
-    <h1 className='font-black text-4xl text-blue-900'>Nuevo Cliente</h1>
-        <p className='mt-3'>Llena los sguientes campos</p>
+    <h1 className='font-black text-4xl text-gray-500'>Nuevo Cliente</h1>
+        <p className=' font-black text-2xl text-gray-500 mt-3'>Llena los sguientes campos</p>
         <Formulario 
         
         categorias={categorias}

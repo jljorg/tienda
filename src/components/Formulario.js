@@ -55,22 +55,23 @@ const Formulario = ({categorias}) => {
 
  
   return (
-    <div>
-      <h1 className="text-center font-black text-2xl text-blue-600 mt-3">
+    <div className="">
+      <h1 className="text-center font-black text-2xl text-gray-500 mt-2  " >
         Fomulario
       </h1>
 
-      <div className="w-full max-w-xs ">
+      
         <form
-          className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mt-10"
+          className="bg-white shadow-md rounded px-12 pt-6 pb-8 mb- mt-10"
           onSubmit={handleSubmit}
         >
-          <div>
+          <div className="mt-3">
             <label htmlFor="nombre" className="text-gray-800 text-xl">
               Nombre
             </label>
+            <br></br>
             <input
-              className=' mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="nombre"'
+              className=' mt-3 shadow appearance-none border rounded w-2/3 py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="nombre"'
               id="nombre"
               type="text"
               placeholder="nombre"
@@ -86,7 +87,7 @@ const Formulario = ({categorias}) => {
               className="form-select
                             appearance-none
                             block
-                            w-full
+                            w-2/3
                             px-3
                             py-1.5
                             text-base
@@ -117,7 +118,7 @@ const Formulario = ({categorias}) => {
               className="form-select
       appearance-none
       block
-      w-full
+      w-2/3
       px-3
       py-1.5
       text-base
@@ -146,11 +147,11 @@ const Formulario = ({categorias}) => {
           <input
             type="submit"
             value="Agregar "
-            className="mt-5 w-full bg-blue-600 hover:bg-blue-300 p-3 text-white 
+            className="mt-5 w-2/3 bg-blue-600 hover:bg-blue-300 p-3 text-white 
                  uppercase font-bold  text-lg rounded-md"
           />
         </form>
-      </div>
+      
     </div>
   );
 };
